@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class catalog="zesp6" name="baza.Semestr" table="semestr">
+        <id column="id" name="id" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+        <property column="typ" name="typ" type="string"/>
+        <property column="rok" name="rok" type="java.lang.Integer"/>
+        <property column="poczatek" name="poczatek" type="java.util.Date"/>
+        <property column="koniec" name="koniec" type="java.util.Date"/>
+        <property column="plan_gotowy" name="plan_gotowy" type="java.lang.Integer"/>
+        
+    </class>
+  
+
+</hibernate-mapping>

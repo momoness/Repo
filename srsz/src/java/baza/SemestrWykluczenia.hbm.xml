@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class catalog="zesp6" name="baza.SemestrWykluczenia" table="semestrwykluczenia">
+        <id column="id" name="id" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+        <many-to-one name="id_semestr" column="id_semestr" class="baza.Semestr" insert="true" update="false"/>
+
+        <property column="dzien" name="dzien" type="java.util.Date"/>
+        <property column="poczatek" name="poczatek" type="java.sql.Time"/>
+        <property column="koniec" name="koniec" type="java.sql.Time"/>
+        <property column="opis" name="opis" type="string"/>
+    </class>
+  
+
+</hibernate-mapping>

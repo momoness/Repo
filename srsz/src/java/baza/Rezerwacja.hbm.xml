@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="zesp6" name="baza.Rezerwacja" table="rezerwacja">
+        <id column="id" name="id" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+       
+        <property column="start" name="start" type="java.util.Date"/>
+        <property column="end" name="koniec" type="java.util.Date"/>
+        <property column="title" name="opis" type="java.lang.String"/>
+        
+        <many-to-one name="typ" class="baza.RezerwacjaTyp"  column="typ" insert="true" update="true"/>
+        
+        <many-to-one name="wlasciciel" column="wlasciciel" class="baza.Osoby" insert="true" update="true"/>
+        <many-to-one name="rezerwujacy" column="rezerwujacy" class="baza.Osoby" insert="true" update="true"/>
+
+        <property column="data_utworzenia" name="data_utworzenia" type="java.util.Date"/>
+        <many-to-one name="id_zasob" column="id_zasob" class="baza.Zasob" insert="true" update="true"/>
+    
+        <property column="powiazany" name="powiazany" type="java.lang.Integer"/>
+        
+        <many-to-one name="edytujacy" column="edytujacy" class="baza.Osoby" insert="true" update="true"/>
+        <property column="data_edycji" name="data_edycji" type="java.util.Date"/>
+        <many-to-one name="kierunek" column="kierunek" class="baza.Kierunek" insert="true" update="true" />
+        
+    </class>
+  
+
+</hibernate-mapping>

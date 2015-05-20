@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="baza.Zasob" catalog="zesp6" table="zasob">
+      <id name="id" type="java.lang.Integer" column="id">
+          <generator class="native"/>
+      </id>
+      <many-to-one name="id_typ" column="id_typ" class="baza.ZasobyTyp" insert="true" update="true"/>
+      <many-to-one name="id_sala" column="typ_sali" class="baza.SalaTyp" insert="true" update="true"/>
+      
+      <property name="nazwa" type="string" column="nazwa"/>
+      <many-to-one name="dodany" column="dodany" class="baza.Osoby"/>
+      
+      <property name="data_dodania" type="java.util.Date" column="data_dodania"/>
+      <many-to-one name="edytowany" column="edytowany" class="baza.Osoby"/>
+      <property name="data_edycji" type="java.util.Date" column="data_edycji"/>
+  </class>
+</hibernate-mapping>

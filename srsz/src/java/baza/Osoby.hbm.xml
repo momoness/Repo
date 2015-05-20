@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="baza.Osoby" catalog="zesp6" table="osoby">
+      
+      <id name="id" type="java.lang.Integer" column="id">
+          <generator class="identity"/>      
+      </id>
+      
+      <property name="imie" type="string" column="imie"/>
+      <property name="nazwisko" type="string" column="nazwisko"/>  
+          
+      <many-to-one name="tytul" column="tytul" class="baza.Tytuly" insert="true" update="true" />   
+         
+      <property name="login" type="string" column="login"/>      
+      <property name="email" type="string" column="email"/>
+      <property name="telefon" type="string" column="Telefon"/>
+      
+      <property name="dodany" column="dodany" type="java.lang.Integer"/>      
+      <property name="data_dodania" type="java.util.Date" column="data_dodania"/>
+      
+      <property name="edytowany" column="edytowany" type="java.lang.Integer"/>
+      <property name="data_edycji" type="java.util.Date" column="data_edycji"/>
+  </class>
+</hibernate-mapping>

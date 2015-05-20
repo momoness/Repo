@@ -1,0 +1,227 @@
+$('#rezerwacjatyp').submit(function(e){
+    e.preventDefault();
+   
+    $.ajax({
+        url:"../..<portlet:renderURL><portlet:param name="jspPage" value="/panel_adm/pages//dodajRezerwacjaTypAkcja.jsp" /></portlet:renderURL>",
+        type:'post',
+        data:$('#rezerwacjatyp').serialize(),
+        success:function(){
+           $("#ostrzezenie").dialog("open");
+            setTimeout(function(){
+    $("#ostrzezenie").dialog("close");
+     }, 700);
+      window.location.reload(true);
+        }
+    });
+});
+
+$('#edytujrezerwacjatyp').submit(function(e){
+    e.preventDefault();
+   
+    $.ajax({
+        url:"../..<portlet:renderURL><portlet:param name="jspPage" value="/panel_adm/pages//updateRezerwacjaTypAkcja.jsp" /></portlet:renderURL>",
+        type:'post',
+        data:$('#edytujrezerwacjatyp').serialize(),
+        success:function(){
+           $("#ostrzezenie").dialog("open");
+            setTimeout(function(){
+    $("#ostrzezenie").dialog("close");
+     }, 700);
+      window.location.reload(true);
+        }
+    });
+});
+
+$('#usunrezerwacjatyp').submit(function(e){
+    e.preventDefault();
+   
+    $.ajax({
+        url:"../..<portlet:renderURL><portlet:param name="jspPage" value="/panel_adm/pages//usunRezerwacjaTypAkcja.jsp" /></portlet:renderURL>",
+        type:'post',
+        data:$('#usunrezerwacjatyp').serialize(),
+        success:function(){
+           $("#ostrzezenie").dialog("open");
+            setTimeout(function(){
+    $("#ostrzezenie").dialog("close");
+     }, 700);
+      window.location.reload(true);
+        }
+    });
+});
+
+    function akceptuj_prosbe(nr){
+        $("#prosba_operacja").val("akceptuj");
+        $("#prosba_id").val(nr);
+        
+        $("#tabela").submit();
+        
+    
+    }
+
+
+ $( "#radio1" ).buttonset();
+// $("#button2").submit();
+$("#button2").button();
+
+
+$( "#accordion,#accordion1" ).accordion({active:false});
+
+ $( "#dialog-form" ).dialog({
+width: 300,
+height:350,
+autoOpen: false,
+show: {
+effect: "blind",
+duration: 1000
+},
+hide: {
+effect: "explode",
+duration: 1000
+},
+
+close:function(){
+
+$( "#mainNav" ).removeClass( "blur" );
+$( "#menu" ).removeClass( "blur" );
+$( "#tabs").removeClass( "blur" );
+
+},
+
+
+ resize: function( event, ui ) {
+                  $( this ).dialog( "option", "title",
+	         ui.size.height + " x " + ui.size.width );
+               }
+
+
+});
+
+
+
+
+$( "#button5" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+        $( "#dialog-form" ).dialog( "close" );
+	event.preventDefault();
+});
+
+
+$("#button6").click(function() {
+$( "#dialog-form" ).parent().effect( "shake", {times:3},80 );
+ return false;
+});
+
+$( "#opener" ).click(function() {
+$( "#dialog-form" ).dialog( "open" );
+$( "#mainNav" ).addClass( "blur" );
+$( "#menu" ).addClass( "blur" );
+$( "#tabs").addClass( "blur" );
+
+});
+
+
+$( "#button1" ).click(function( event ) {
+	
+});
+
+$( "#dialoguzytkownik" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+
+$("#button13").button();
+$("#button13").submit();
+
+
+
+
+
+$( "#button1,#button2,#button3,#button4,#opener,#button5,#button6" ).button();
+$("#mainNav").buttonset();
+
+$( "#radioset" ).buttonset();
+
+
+
+$( "#tabs,#tabs-1,#tabs-2" ).tabs({
+
+
+});
+
+
+
+
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+
+// Link to open the dialog
+$( "#dialog-link" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+	event.preventDefault();
+});
+
+
+
+$( "#datepicker,#datepicker1,#datepicker2" ).datepicker({
+	inline: true
+});
+
+
+
+$(function() {
+    $( "#menu" ).menu({
+      items: "> :not(.ui-widget-header)"
+    });
+});
+
+$( "#spinner" ).spinner();
+
+$( "#selectmenu" ).selectmenu();
+
+
+
+
+
+
+$( "#tooltip" ).tooltip();
+
+
+$( "#ostrzezenie" ).dialog({
+                 autoOpen:false,
+                 height:130,
+                 show:{effect:"fade", duration:100},
+                 hide:{effect:"fade", duration:100}
+             });
+
+
+

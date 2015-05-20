@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="baza.UprawnienieOsoba" catalog="zesp6" table="uprawnienieosoba">
+      <id name="id" type="java.lang.Integer" column="id">
+          <generator class="identity"/>      
+      </id>
+      <many-to-one name="id_prac" column="id_prac" class="baza.Osoby" insert="true" update="false"/>
+      <many-to-one name="id_uprawnienie" column="id_uprawnienie" class="baza.Uprawnienie" insert="true" update="false"/>
+      <many-to-one name="dodany" column="dodany" class="baza.Osoby" insert="true" update="false"/>
+      <property name="data_dodania" type="java.util.Date" column="data_dodania"/>
+  </class>
+</hibernate-mapping>

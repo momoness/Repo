@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class catalog="zesp6" name="baza.PlanIgnoruj" table="planignoruj">
+    <id column="id" name="id" type="java.lang.Integer">
+      <generator class="identity"/>
+    </id>
+    <many-to-one column="id_semestr" name="id_semestr" class="baza.Semestr" insert="true" update="true"/>
+    <property column="dzien" name="dzien" type="java.util.Date"/>
+    <many-to-one column="zajecia_id" name="zajecia_id" class="baza.Rezerwacja" insert="true" update="true"/>
+    <property column="opis" name="opis" type="string"/>
+    <many-to-one column="dodany" name="dodany" class="baza.Osoby" insert="true" update="true"/>
+    <property column="data_utworzenia" name="data_utworzenia" type="java.util.Date"/>
+  </class>
+</hibernate-mapping>

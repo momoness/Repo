@@ -1,0 +1,266 @@
+#mainNav
+{
+    /* test code 
+    border-color: green;
+    border-style: solid;*/
+    box-shadow: 10px 10px 5px #888888;
+    font-family: tahoma,arial,sans-serif;
+
+    width: 633px;	
+    margin-left: 36px;
+    //margin-left:36px;
+    margin-bottom: 10px;
+
+}
+
+
+.ui-menu {width:200px;float:left; margin-left:-10px; margin-bottom: 10px; box-shadow: 10px 10px 5px #888888; border-radius: 5px 10px 5px 10px; border-top-left-radius: 2em 0.5em;
+          border-top-right-radius: 1em 3em;float:left; }
+.ui-widget-header { padding: 0.3em; }
+
+
+.blur {
+    text-shadow: 0px 0px 20px #000000;
+    opacity: 0.4;
+}
+
+.prosby{ font-weight: normal; background-color: #deedf7; border: 1px solid #aed0ea; width:100%}
+.prosby td{padding-left: 3px; height: 30px; overflow: hidden; }
+
+.prosby tr{overflow-y: hidden;}
+.prosby tr:nth-child(even) {background: #e9f2f7;}
+
+.naglowek{font-weight: bold; background-color: #3baae3; color: #fff;}
+
+#opisProsby{
+            overflow:hidden;
+}
+#opisProsby:hover{height: auto;}
+
+div#users-contain { width: 350px; margin: 20px 0; }
+div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%;}
+div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+
+.demoHeaders {
+    margin-top: 1.0em;
+}
+
+select {
+    width: 200px;
+}
+
+
+
+
+#tabela{
+    max-height: 380px;
+    width: 600px;
+    padding: 0;
+    overflow-y: auto;
+}
+
+
+#zawartosc_strony{
+    font: 12px "Trebuchet MS", sans-serif;
+    width:892px;
+    position:relative;
+      opacity: 0;
+
+    
+
+    -webkit-transition: opacity 0.5s ease-in;
+       -moz-transition: opacity 0.5s ease-in;
+        -ms-transition: opacity 0.5s ease-in;
+         -o-transition: opacity 0.5s ease-in;
+            transition: opacity 0.5s ease-in;
+               
+   
+   
+    // margin-top:0px;
+    // -webkit-filter: blur(3px)
+    
+}
+
+#zawartosc_strony.load {
+    opacity: 1;
+}
+
+.demoHeaders {
+    margin-top: 1.0em;
+}
+select {
+    width: 200px;
+}
+
+
+#mainNav .menu-item .hover-menu
+{
+    display: none;
+    border: none;
+}
+
+#mainNav .menu-item:hover .hover-menu
+{
+    display: block;
+    white-space: normal;	
+    width: 160,25px;
+    position: absolute;
+    left: 0;
+    top: 21px;
+}
+
+#logo{
+
+    margin-top:20px;
+    color:blue;
+    font-size:40px;
+    letter-spacing:2px;
+}
+
+
+
+
+#topbar{
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    height: 400px;
+    width:600px;
+}
+
+
+#mainNav .menu-item:hover
+{
+    position: relative; 
+
+}
+#mainNav .menu-item
+{
+    display: inline; 
+}
+
+#mainNav > .menu-item > label
+{
+    width: 208.5px !important;
+    height: 50px !important;
+}
+
+.hover-menu > .menu-item > label
+{
+    width: 158,25px !important;
+
+    text-align: center;
+    margin: 2px 0 2px 2px;
+}
+
+
+h1
+{
+    margin: 4px 0 6px 6px;
+}
+
+
+#mainHeader
+{
+    /* test code
+    border-color: orange;
+    border-style: solid; */
+}
+
+
+
+
+label {
+    width: 5em;
+}
+fieldset div {
+    margin-bottom: 2em;
+}
+fieldset .help {
+    display: inline-block;
+}
+.ui-tooltip {
+    width: 210px;
+}
+
+.zwykly{ 
+    border-radius: 10px;
+    padding: 2px;
+    background-color: #444444;
+    border: 2px solid #4f4f4f;
+    border-style: outset;
+    //color: #f0f0f0;
+    display: inline-block;
+    width: 100px;
+    //text-shadow: 0 0 2px #7f0000;
+
+}
+
+.wcisniety, .wcisniety:focus{ 
+    border-radius: 10px;
+    padding: 2px;
+    background: linear-gradient(#ABEDAD ,#ABEDAD );
+    border: 2px solid #007f15;
+    border-style: ridge;
+    //color: #97ff9e;
+    display: inline-block;
+    width: 100px;
+    //text-shadow: 0 0 2px #007f15;
+}
+
+.odstepy, .odstepySrednie, .odstepySzersze{
+    line-height: 35px;
+}
+.odstepy td:first-of-type{
+    width: 75px;
+}
+.odstepySzersze td:first-of-type{
+    width: 150px;
+}
+
+.odstepySrednie td:first-of-type{
+    width: 100px;
+}
+
+input[type="number"] {
+  border: 1px solid;
+  border-color: #BFBFBF #DEDEDE #DEDEDE #BFBFBF;
+  font: 1em Arial, Helvetica, Verdana, sans-serif;
+  padding: 5px 1px;
+}
+
+.fc-time{
+                color: #fff;
+            }
+
+            .fc-title{
+                color: #fff;
+            } 
+            #id_zasobup, #typup, #wlasc1ed, #typ1, #wlasc1, #titleup, #title1 {
+            width: 100%;
+            } 
+            
+            #mainNav{
+    width: 840px;
+}
+
+#mainNav > .menu-item > label {
+height: 35px !important;
+width: 277.5px !important;
+}
+
+#mainNav > .menu-item > label > span{
+    padding: 0;
+    line-height: 35px;
+}
+
+#tabela{
+width: 815px;
+}
+.prosba{
+width: 100%;
+} 
+
+#tabs{
+    width: 840px;
+}

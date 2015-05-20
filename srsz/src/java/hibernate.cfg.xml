@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://labsql.studmat.umk.pl:3306/zesp6?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">zesp6</property>
+    <property name="hibernate.connection.password">$z3SPszeSC!</property>
+    <property name="hibernate.enable_lazy_load_no_trans">true</property>
+    <property name="current_session_context_class">thread</property>
+    <mapping resource="baza/Tytuly.hbm.xml"/>
+    <mapping resource="baza/Osoby.hbm.xml"/>
+    <mapping resource="baza/Zasob.hbm.xml"/>
+    <mapping resource="baza/Zwolnienia.hbm.xml"/>
+    <mapping resource="baza/ZasobyTyp.hbm.xml"/>
+    <mapping resource="baza/ZasobOpis.hbm.xml"/>
+    <mapping resource="baza/UprawnienieZasob.hbm.xml"/>
+    <mapping resource="baza/UprawnienieOsoba.hbm.xml"/>
+    <mapping resource="baza/Uprawnienie.hbm.xml"/>
+    <mapping resource="baza/PlanIgnoruj.hbm.xml"/>
+    <mapping resource="baza/Prosba.hbm.xml"/>
+    <mapping resource="baza/Rezerwacja.hbm.xml"/>
+    <mapping resource="baza/RezerwacjaTyp.hbm.xml"/>
+    <mapping resource="baza/SalaTyp.hbm.xml"/>
+    <mapping resource="baza/Semestr.hbm.xml"/>
+    <mapping resource="baza/SemestrWykluczenia.hbm.xml"/>
+    <mapping resource="baza/SemestrZmiany.hbm.xml"/>
+    <mapping resource="baza/Kierunek.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
