@@ -1,0 +1,20 @@
+﻿<Window x:Class="Aplikacja.usunI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Usuń Inny Zasób" Height="300" Width="300" MinWidth="300" MinHeight="300">
+    <Grid>
+        <Label Content="Usuń Zasób" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Foreground="#FF51AE1B"/>
+        <RadioButton x:Name="albumB" Content="Album" HorizontalAlignment="Left" Margin="27,49,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="kalB" Content="Kalendarz" HorizontalAlignment="Left" Margin="100,49,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="mapaB" Content="Mapa" HorizontalAlignment="Left" Margin="196,49,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="atlasB" Content="Atlas" HorizontalAlignment="Left" Margin="27,70,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="przB" Content="Przewodnik" HorizontalAlignment="Left" Margin="100,73,0,0" VerticalAlignment="Top"/>
+        <Label Content="Podaj tytuł usuwanego zasobu:" HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="usunB" HorizontalAlignment="Left" Height="23" Margin="10,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272"/>
+        <Label Content="Rezultat usuwania:" HorizontalAlignment="Left" Margin="10,181,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="wynikB" HorizontalAlignment="Left" Height="23" Margin="10,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272"/>
+        <Button Content="Usuń" HorizontalAlignment="Left" Margin="207,173,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Wyjdź" HorizontalAlignment="Left" Margin="207,235,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

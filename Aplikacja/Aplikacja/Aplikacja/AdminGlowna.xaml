@@ -1,0 +1,35 @@
+﻿<Window x:Class="Aplikacja.AdminGlowna"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AdminGlowna" Height="442.448" Width="551.925" Closing="zamykanie_okna">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="428" VerticalAlignment="Top" Width="194" Source="Zasoby/books2.jpg" Cursor="None" Stretch="Fill" Margin="352,0,-2,-16" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="428" VerticalAlignment="Top" Width="164" Source="Zasoby/books2.jpg" Cursor="None" Stretch="Fill"/>
+        <Label Content="Witaj!" HorizontalAlignment="Left" Margin="83,10,0,0" VerticalAlignment="Top" FontSize="16" FontStyle="Italic" Background="White" Foreground="#FF2857D3"/>
+        <Label Content="Przeglądaj zasoby" HorizontalAlignment="Left" Margin="98,78,0,0" VerticalAlignment="Top" Width="145"/>
+        <Label Content="Dodaj zasób" HorizontalAlignment="Left" Margin="98,128,0,0" VerticalAlignment="Top"/>
+        <Button Content="Książka" HorizontalAlignment="Left" Margin="266,128,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click"/>
+        <Button Content="Czasopismo" HorizontalAlignment="Left" Margin="266,155,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click_1"/>
+        <Button Content="Inne" HorizontalAlignment="Left" Margin="266,182,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click_3"/>
+        <Label Content="Usuń zasób" HorizontalAlignment="Left" Margin="98,230,0,0" VerticalAlignment="Top"/>
+        <Label Content="Zamówienia" HorizontalAlignment="Left" Margin="98,340,0,0" VerticalAlignment="Top"/>
+        <Button Content="Przejrzyj" HorizontalAlignment="Left" Margin="266,340,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click_2"/>
+        <Button Content="?" HorizontalAlignment="Left" Margin="516,11,0,0" VerticalAlignment="Top" Width="18" ToolTip="O Programie" Click="Button_Click_5"/>
+        <Button x:Name="Czasopisma" Content="Czasopisma" HorizontalAlignment="Left" Margin="266,257,0,0" VerticalAlignment="Top" Width="90" Click="Czasopisma_Click"/>
+        <Button Content="Książki" HorizontalAlignment="Left" Margin="266,230,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click_6"/>
+        <Button Content="Inne" HorizontalAlignment="Left" Margin="266,284,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click_8"/>
+        <Button Content="Przejrzyj" HorizontalAlignment="Left" Margin="266,82,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click_7"/>
+        <TextBox x:Name="StanSerweraBox" HorizontalAlignment="Left" Height="23" Margin="354,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Stan serwera:" HorizontalAlignment="Left" Margin="266,10,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

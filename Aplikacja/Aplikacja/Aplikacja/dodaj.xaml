@@ -1,0 +1,32 @@
+﻿<Window x:Class="Aplikacja.dodaj"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dodaj Książkę" Height="344" Width="300">
+    <Grid x:Name="dramatB" HorizontalAlignment="Left" Width="292" Height="314" VerticalAlignment="Top" MinWidth="292" MinHeight="314">
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="196,268,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBox x:Name="tytulText" HorizontalAlignment="Left" Height="21" Margin="133,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nazwiskoText" HorizontalAlignment="Left" Height="23" Margin="133,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ImieText" HorizontalAlignment="Left" Height="23" Margin="133,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <RadioButton x:Name="dramatB1" Content="Dramat" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="horrorB" Content="Horror" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="fantasyB" Content="Fantasy" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="romansB" Content="Romans" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="komediaB" Content="Komedia" HorizontalAlignment="Left" Margin="92,10,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="historycznaB" Content="Historyczna" HorizontalAlignment="Left" Margin="175,10,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="przygB" Content="Przygodowa" HorizontalAlignment="Left" Margin="175,31,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="sensacjaB" Content="Sensacja" HorizontalAlignment="Left" Margin="92,31,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="MilitariaB" Content="Militaria" HorizontalAlignment="Left" Margin="92,52,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="religiaB" Content="Religia" HorizontalAlignment="Left" Margin="92,73,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="pieknaB" Content="L. Piękna" HorizontalAlignment="Left" Margin="175,52,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="kuchniaB" Content="Kuchnia" HorizontalAlignment="Left" Margin="175,76,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="naukaB" Content="Nauka" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="podB" Content="Podręczniki" HorizontalAlignment="Left" Margin="175,97,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="powiescB" Content="Powieść" HorizontalAlignment="Left" Margin="92,97,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="inneB" Content="Inny" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top"/>
+        <Label Content="Imię Autora" HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nazwisko Autora" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.342,0.154"/>
+        <Label Content="Tytuł" HorizontalAlignment="Left" Margin="10,159,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="sportB" Content="Sport" HorizontalAlignment="Left" Margin="92,118,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
